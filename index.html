@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A3 Survey</title>
+  <link rel="stylesheet" href="homePage.css"/>
+</head>
+
+<header>
+
+</header>
+
+<body>
+  <main class="main">
+    <form class="form">
+      <h2 class="title">Workshop's Survey</h2>
+      <p class="intro">Are you interested in one of our workshops? Feel free to leave us your information; 
+        we will contact you as soon as new dates are available.</p>
+
+      <section class="inputsSection">
+        <section class="asdContainer">
+          <ul class="asd">
+            <li>First Name:</li>
+            <li>Last Name:</li>
+            <li>Email:</li>
+            <li>Age:</li>
+            <li>Workshop:</li>
+            <li>Preferred time:</li>
+          </ul>
+        </section>
+        <section class="inputs">
+          <input type="text" id="firstName" placeholder="Gabriel"/>
+          <input type="text" id="lastName" placeholder="Osorno"/>
+          <input type="email" id="email" placeholder="example@group.com"/>
+          <input type="number" id="age" placeholder="22"/>
+          <select id="workshop">
+            <option value="WS01" selected>Agile Methodologies 101</option>
+            <option value="WS02">Introduction to Unity</option>
+            <option value="WS03">Advanced English</option>
+            <option value="WS04">Design Thinking</option>
+            <option value="WS05">Project Time Management</option>
+            <option value="WS06">Modern JavaScript: ES6 Basics</option>
+          </select>
+          <section class="radioButtons">
+            <input type="radio" name="prefTime" class="radioButton"/>
+            <label>Morning</label>
+            <input type="radio" name="prefTime" class="radioButton"/>
+            <label>Evening</label>
+          </section>
+        </section>
+      </section>
+
+      <section class="commentSection">
+        Any comments?
+        <textarea type="text" id="feedback" cols="50" rows="5" placeholder="Comments"></textarea>
+      </section>
+
+      <label>
+        <input type="checkbox" value="subscription"/>
+        Would you like to receive more information about future workshops and surveys?
+        <br/><br/>
+      </label>
+
+      <submit>
+        <button class="submitButton">
+          Submit
+        </button>
+      </submit>
+    </form>
+  </main>
+</body>
+
+<footer class="footer">
+  <em>Gabriel Osorno Villanueva</em>
+</footer>
+</html>
